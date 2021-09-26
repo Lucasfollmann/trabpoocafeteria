@@ -10,10 +10,6 @@ package Bebidas;
  * @author lucas
  */
 public class Bebidas {
-
-    public static void selectSize(int nextInt) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
      private String name;
     private double value;
 
@@ -36,25 +32,5 @@ public class Bebidas {
     @Override
     public String toString() {
         return "Bebidas{" + "name=" + name + ", value=" + value + '}';
-    }
-
-    public void selectBebidas(int nextInt) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void maisAdicionais() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public String getTotalValue() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public String getBebidas() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public String getAdicionais() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

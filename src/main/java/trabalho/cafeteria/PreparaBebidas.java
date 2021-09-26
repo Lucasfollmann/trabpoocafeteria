@@ -1,11 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package trabalho.cafeteria;
 
-package Projeto.Cafeteria.aplicacao;
+package trabalho.cafeteria;
 
 import Aicionais.Cookie;
 import Aicionais.LeiteNinho;
@@ -26,13 +20,13 @@ import java.util.ArrayList;
  * @author Lucas
  */
 
-public class Bebidas {
+public class PreparaBebidas {
     
     private int op;
     private double totalValue;
     private double valueBebidas;
     private int validator = 1;
-    private ArrayList<String> Aicionais = new ArrayList();
+    private ArrayList<String> CondimentosADC = new ArrayList();
     private ArrayList<String> Bebidas = new ArrayList();
 
     public void selectBebidas(int op) {
@@ -86,7 +80,7 @@ public class Bebidas {
         }
     }
 
-    public void selectAdicionais() {
+    public void selectCondimentosADC() {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("SELECIONE UM ADICIONAL");
@@ -105,48 +99,48 @@ public class Bebidas {
                 RaspasLimao raspasdelimao = new RaspasLimao();
                 raspasdelimao.prepareRaspasLimao();
                 totalValue += raspasdelimao.getValue();
-                Aicionais.add("Raspas de Limao");
+                CondimentosADC.add("Raspas de Limao");
                 break;
             case 2:
                 Canela canela = new Canela();
                 canela.prepareCanela();
                 totalValue += canela.getValue();
-                Aicionais.add("Canela em Po");
+                CondimentosADC.add("Canela em Po");
                 break;
             case 3:
                 LeiteNinho leiteninho = new LeiteNinho();
                 leiteninho.prepareLeiteNinho();
                 totalValue += leiteninho.getValue();
-                Aicionais.add("Leite Ninho - Colher");
+                CondimentosADC.add("Leite Ninho - Colher");
                 break;
             case 4:
                 GeloCremeDeLeite gelodecremedeleite = new GeloCremeDeLeite();
                 gelodecremedeleite.prepareGeloCremeDeLeite();
                 totalValue += gelodecremedeleite.getValue();
-                Aicionais.add("Gelo de creme de Leite - Cubo");
+                CondimentosADC.add("Gelo de creme de Leite - Cubo");
                 break;
             case 5:
                 LeiteCondensado leitecondensado = new LeiteCondensado();
                 leitecondensado.prepareLeiteCondensado();
                 totalValue += leitecondensado.getValue();
-                Aicionais.add("Leite Condensado - Colher");
+                CondimentosADC.add("Leite Condensado - Colher");
                 break;
             case 6:
                 Chocolate chocolatepo = new Chocolate();
                 chocolatepo.prepareChocolate();
                 totalValue += chocolatepo.getValue();
-                Aicionais.add("Chocolate em Po - Colher");
+                CondimentosADC.add("Chocolate em Po - Colher");
                 break;
             case 7:
                 Cookie cookie = new Cookie();
                 cookie.prepareCookie();
                 totalValue += cookie.getValue();
-              Aicionais.add("Cookie - Unidade");
+              CondimentosADC.add("Cookie - Unidade");
                 break;
         }
     }
 
-    public void maisAdicionais() {
+    public void maisCondimentosADC() {
         Scanner sc = new Scanner(System.in);
         while (validator == 1) {
             System.out.println("Adquirir adicional?");
@@ -160,7 +154,7 @@ public class Bebidas {
     private void validator(int op) {
         switch (op) {
             case 1:
-                selectAdicionais();
+                selectCondimentosADC();
                 break;
             case 2:
                 validator -= 1;
@@ -173,8 +167,8 @@ public class Bebidas {
         return totalValue;
     }
 
-    public ArrayList<String> getAdicionais() {
-        return Aicionais;
+    public ArrayList<String> getCondimentosADC() {
+        return CondimentosADC;
     }
 
     public ArrayList<String> getBebidas() {

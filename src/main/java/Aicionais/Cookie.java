@@ -9,7 +9,7 @@ package Aicionais;
  *
  * @author lucas
  */
-public class Cookie extends Aicionais {
+public class Cookie extends CondimentosADC {
     public void prepareCookie() {
         setName("Cookie (Unidade)");
         setValue(0.90);

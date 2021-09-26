@@ -1,11 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package trabalho.cafeteria;
 
-package Projeto.Cafeteria.aplicacao;
 
 import Bebidas.Bebidas;
 import Bebidas.Cafe;
@@ -22,7 +16,7 @@ public class Main {
 
         Bebidas bebidas = new Bebidas();
         Cafe cafe = new Cafe();
-        Bebidas preparativodabebida = new Bebidas();
+        PreparaBebidas preparabebidas = new PreparaBebidas();
 
         System.out.println("QUAL BEBIDA DESEJA?: ");
         System.out.println("[1] - Cafe");
@@ -31,20 +25,20 @@ public class Main {
         System.out.println("[4] - Mocha");
         System.out.println("[5] - Espresso Panna");
         System.out.println("Insira codigo correspondente: ");
-        preparativodabebida.selectBebidas(sc.nextInt());
+        preparabebidas.selectBebidas(sc.nextInt());
 
         System.out.println("SELECIONE TAMANHO DO COPO: ");
         System.out.println("[1] - Pequeno");
         System.out.println("[2] - Medio");
         System.out.println("[3] - Grande");
         System.out.println("Digite aqui o codigo correspondente: ");
-        Bebidas.selectSize(sc.nextInt());
+       preparabebidas.selectSize(sc.nextInt());
 
-        preparativodabebida.maisAdicionais();
+        preparabebidas.maisCondimentosADC();
 
-        System.out.println("O valor do pedido foi: " + preparativodabebida.getTotalValue());
-        System.out.println("A bebida pedida foi: " + preparativodabebida.getBebidas());
-        System.out.println("O(s) adicional(is) pedidos foram: " + preparativodabebida.getAdicionais());
+        System.out.println("O valor do pedido foi: " + preparabebidas.getTotalValue());
+        System.out.println("A bebida pedida foi: " + preparabebidas.getBebidas());
+        System.out.println("O(s) adicional(is) pedidos foram: " + preparabebidas.getCondimentosADC());
 
         sc.close();
         

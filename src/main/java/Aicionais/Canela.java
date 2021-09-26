@@ -9,7 +9,7 @@ package Aicionais;
  *
  * @author lucas
  */
-    public class Canela extends Aicionais{
+    public class Canela extends CondimentosADC{
     public void prepareCanela() {
         setName("Canela");
         setValue(0.75);

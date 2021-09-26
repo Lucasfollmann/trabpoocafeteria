@@ -9,7 +9,7 @@ package Aicionais;
  *
  * @author lucas
  */
-    public class Chocolate extends Aicionais {
+    public class Chocolate extends CondimentosADC {
      public void prepareChocolate() {
         setName("Chocolate - Colher");
         setValue(1.50);

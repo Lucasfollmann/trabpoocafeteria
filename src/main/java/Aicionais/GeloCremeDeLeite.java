@@ -9,7 +9,7 @@ package Aicionais;
  *
  * @author lucas
  */
-public class GeloCremeDeLeite extends Aicionais {
+public class GeloCremeDeLeite extends CondimentosADC {
     public void prepareGeloCremeDeLeite() {
         setName("Gelo de Creme de Leite - Cubo");
         setValue(1.75);

@@ -9,7 +9,7 @@ package Aicionais;
  *
  * @author lucas
  */
-public class RaspasLimao extends Aicionais {
+public class RaspasLimao extends CondimentosADC {
     public void prepareRaspasLimao() {
         setName("Raspas de Limao");
         setValue(0.5);

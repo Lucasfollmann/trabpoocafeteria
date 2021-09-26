@@ -9,7 +9,7 @@ package Aicionais;
  *
  * @author lucas
  */
-public class LeiteCondensado extends Aicionais {
+public class LeiteCondensado extends CondimentosADC {
     public void prepareLeiteCondensado() {
         setName("Leite condensado (colher)");
         setValue(1.85);
